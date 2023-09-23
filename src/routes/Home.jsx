@@ -12,6 +12,13 @@ const HomePage = () => {
       >
         TO DO LIST
       </button>
+      <button
+        onClick={() => {
+          navigate("/headless");
+        }}
+      >
+        HEADLESS COMPONENTS
+      </button>
     </div>
   );
 };

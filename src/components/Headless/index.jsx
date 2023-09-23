@@ -1,22 +1,17 @@
-import { useState } from "react";
-import CompoundCheckboxWrapper from "./CompoundCheckbox";
-import styles from "./headless.module.scss";
+import CompoundComponent from "./CompoundComponent";
+import FunctionAsChildComponent from "./FunctionAsChildComponent";
+import HookComponent from "./HookComponent";
+import style from "./headless.module.scss";
 
 const Headless = () => {
-  const [isChecked, setIsChecked] = useState(false);
   return (
-    <div>
+    <div className={style.wrapper}>
       <h2>compound checkbox</h2>
-      <CompoundCheckboxWrapper
-        id="compound"
-        isChecked={isChecked}
-        onChange={() => setIsChecked((prev) => !prev)}
-      >
-        <CompoundCheckboxWrapper.Checkbox className="hi" />
-        <CompoundCheckboxWrapper.Label className={styles.colored_label}>
-          compound checkbox
-        </CompoundCheckboxWrapper.Label>
-      </CompoundCheckboxWrapper>
+      <CompoundComponent />
+      <h2>function as child component</h2>
+      <FunctionAsChildComponent />
+      <h2>custom hook</h2>
+      <HookComponent />
     </div>
   );
 };

@@ -1,3 +1,11 @@
-.colored_label {
-  color: orange;
+.wrapper {
+  label {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+  input,
+  label {
+    cursor: pointer;
+  }
 }

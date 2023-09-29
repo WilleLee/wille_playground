@@ -1,7 +1,7 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import HomePage from "./routes/Home";
-import TodoPage from "./routes/Todo";
 import HeadlessPage from "./routes/Headless";
+import TodosPage from "./routes/TodosPage";
 
 const router = createBrowserRouter([
   {
@@ -9,8 +9,8 @@ const router = createBrowserRouter([
     element: <HomePage />,
   },
   {
-    path: "/todo",
-    element: <TodoPage />,
+    path: "/todos",
+    element: <TodosPage />,
   },
   {
     path: "/headless",

@@ -7,7 +7,7 @@ const HomePage = () => {
       <h1>this is home</h1>
       <button
         onClick={() => {
-          navigate("/todo");
+          navigate("/todos");
         }}
       >
         TO DO LIST
